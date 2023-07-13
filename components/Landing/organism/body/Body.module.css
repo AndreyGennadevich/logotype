@@ -1,0 +1,38 @@
+.container {
+	padding: 3rem 1.563rem;
+	margin: 0 auto;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem 2.5rem;
+}
+
+.item {
+	cursor: pointer;
+}
+
+.item:hover {
+	box-shadow: 0.125rem 0.125rem 0.938rem #E9E9E9;
+}
+
+@media (min-width: 720px) {
+	.container {
+		padding: 3rem 3.125rem;
+	}
+
+	.list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1260px;
+	}
+
+	.list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
